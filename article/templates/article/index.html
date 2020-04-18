@@ -1,8 +1,8 @@
 <h2>記事一覧画面</h2>
 <a href="{% url 'create' %}">記事を作成する</a>
-{% if report_list %}
+{% if object_list %}
     <ul>
-    {% for report in report_list %}
+    {% for report in object_list %}
         <li><a href="{% url 'detail' report.id %}">{{ report.title }}</a></li>
     {% endfor %}
     </ul>
