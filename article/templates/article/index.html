@@ -1,0 +1,10 @@
+<h2>記事一覧画面</h2>
+{% if report_list %}
+    <ul>
+    {% for report in report_list %}
+        <li><a href="{% url 'detail' report.id %}">{{ report.title }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>記事がありません</p>
+{% endif %}
