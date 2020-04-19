@@ -1,4 +1,5 @@
 docker-compose.env
+docker-compose-pg.env
 
 __pycache__/
 *.py[cod]
