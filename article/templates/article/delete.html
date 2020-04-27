@@ -1,6 +1,9 @@
+{% extends "base.html" %}
+{% block content %}
 <h2>削除確認画面</h2>
     <form method="post">
         {% csrf_token %}
         <p>{{ report.title }}を削除しますか？</p>
         <input type="submit" value="削除する">
     </form>
+{% endblock %}

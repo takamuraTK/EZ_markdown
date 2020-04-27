@@ -1,3 +1,5 @@
+{% extends "base.html" %}
+{% block content %}
 <h2>記事作成画面</h2>
 <p>{{ message }}</p>
 <form method="POST" novalidate>
@@ -5,3 +7,4 @@
     {{ form.as_p }}
     <button type="submit">送信</button>
 </form>
+{% endblock %}

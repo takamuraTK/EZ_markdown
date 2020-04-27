@@ -1,3 +1,5 @@
+{% extends "base.html" %}
+{% block content %}
 <a href="{% url 'index' %}">一覧に戻る</a>
 <h3>{{ report.title }}</h3>
 <p>作成日時: {{ report.pub_date }}</p>
@@ -6,3 +8,4 @@
 </div>
 <a href="{% url 'update' report.id %}">編集する</a>
 <a href="{% url 'delete' report.id %}">削除する</a>
+{% endblock %}
